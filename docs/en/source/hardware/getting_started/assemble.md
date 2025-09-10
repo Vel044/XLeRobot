@@ -16,20 +16,20 @@ If you'd rather skip the fun of tightening screws, you can also buy [pre-assembl
 > If you already have 2x SO101 arms assembled with motors configured, skip.
 >
 
-- Build 2x SO101 arms by following [SO101 Step-by-Step Assembly Instructions](https://huggingface.co/docs/lerobot/so101) to build 2 identical follower arms with 2 sets of motors (both preivous indexed as 1-6) for 2 control boards.
+- Build 2x SO101 arms by following [SO101 Step-by-Step Assembly Instructions](https://huggingface.co/docs/lerobot/so101) to build 2 identical follower arms with 2 sets of motors (both previous indexed as 1-6) for 2 control boards.
 - Then continue to [configure the motors](https://huggingface.co/docs/lerobot/so101#configure-the-motors) for the SO101 arms. 
 - Follow this [installation guide](https://github.com/TheRobotStudio/SO-ARM100/tree/main/Optional/SO101_Wrist_Cam_Hex-Nut_Mount_32x32_UVC_Module) to add wrist cameras.
 - If you have [3M gripper tape](https://www.amazon.com/gp/product/B0093CQPW8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), now it's time to wrap it on the fingers.
 
 
-## 🤔 Conigure Motors
+## 🤔 Configure Motors
 
 ![image](https://github.com/user-attachments/assets/fc674d38-d703-40bd-87a2-a502af1b52c7)
 
-> Since the official lerobot codebase currently doesn't support motor configuring besides the arm, we use [Bambot](https://bambot.org/) instead.
+> Since the official lerobot codebase currently doesn't support motor configuring besides the arm, we use [Bambot](https://bambot.org/) instead (works on Windows and Mac, Linux needs 'sudo chmod 666 /dev/ttyACM0' first).
 >
 
-- Connect the motor you want to configure (one-by-one) to a control board, and directly connect tohe board to your computer. 
+- Connect the motor you want to configure (one-by-one) to a control board, and directly connect the board to your computer. 
 - Navigate to [the motor configuration page of Bambot](https://bambot.org/feetech.js), establish the connection and scan for your servo motor.
   ![image](https://github.com/user-attachments/assets/89eb4674-e26e-4edc-9943-ad5c0d4516ec)
 
@@ -49,7 +49,7 @@ If you'd rather skip the fun of tightening screws, you can also buy [pre-assembl
 
 ## 🧑‍🦼‍➡ Wheel Base
 
-> If you already have a Lekiwi base, distach the battery, servo mounts, etc. Base plate will only have 3 mounted motors with wheels (keep the wirings).
+> If you already have a Lekiwi base, detach the battery, servo mounts, etc. Base plate will only have 3 mounted motors with wheels (keep the wirings).
 >
 
 ![image](https://github.com/user-attachments/assets/4599c9d0-3ce3-40e8-9a8e-d21e1e5feb01)
@@ -80,7 +80,7 @@ Put the Lekiwi base with the connectors under the cart to see whether it can giv
 
 
 ```{tip}
-Filp the cart over to do the assembly below.
+Flip the cart over to do the assembly below.
 ```
 
 - Now install the Lekiwi base with the connectors onto the bottom of the IKEA cart, with the thinner plate on the other side.
@@ -103,7 +103,7 @@ This new hardware version is compatible with the IKEA cart metal mesh, and all t
 ![image](https://github.com/user-attachments/assets/1ea61764-6e4c-4edf-8d0f-0979430a7921)
 
 
-- Easier assembly when the base is filpped over.
+- Easier assembly when the base is flipped over.
 
 ### Head Assembly
 
@@ -133,7 +133,7 @@ When extending the 5264 wire yourself, be careful with the polarity—reversed c
 
 ### 🔋 Place the Battery 🛒
 
-- Anywhere you like on the middle or lower level of the cart to maintain a low center of mass. The battery has an anti-slip bottom so it won't easily silde during normal operations.
+- Anywhere you like on the middle or lower level of the cart to maintain a low center of mass. The battery has an anti-slip bottom so it won't easily slide during normal operations.
 - Maintain placed upright for safety.
 - Just in case you also accidentally throw the battery manual away, [here it is](https://github.com/Vector-Wangel/XLeRobot/blob/main/others/Manual_Anker_SOLIX_C300_DC_Portable_Power_Station.pdf).
 
@@ -155,14 +155,31 @@ Complete all wiring and cable management for the top base and put the Raspberry 
 - For easier testing, the SO101 arms clamp directly onto the cart. Position the [arm bases](https://github.com/Vector-Wangel/XLeRobot/blob/main/3D_Models/3D_models_for_printing/XLeRobot_special/SO_5DOF_ARM100_Assemblybases.stl) at the two corners of the cart's top layer, then secure with clamps.
 - Don't forget to put the bambulab filament cardboard spool inside to provide stable structural support if you have one.
 
+
+After these steps, the XLeRobot should be physically well-built and ready to do some chores.
+
+
 ![image](https://github.com/user-attachments/assets/4efa2b31-627c-4f62-9977-d6a50d8dce0e)
 
 ![image](https://github.com/user-attachments/assets/1d553e6a-dad6-4b17-bc82-e4d6d3e2ecc8)
 
 
+
+
 ```{important}
 Once XLeRobot is fully assembled, do not push it around like the IKEA cart, as this can damage the motor gears. Instead, lift the robot (~12kg) whenever you need to move it manually.
 ```
+```{note}
+Current form of the wheel connector is not strong, occasionally rescrewing the center screw may be needed.
+```
+### Optional Visual Upgrades
 
+For better visual outlook, you can wear these parts to XLeRobot if you like. 
 
+![image](https://github.com/user-attachments/assets/91491f62-a466-4421-ac9b-db3492849a89)
 
+- **Shells** for the Control board and the first joint for better protection and visual.
+  - You may need to take off the hand camera first before wearing the 2nd shell onto the arm.
+- Sports sleeves to hide the cables and make XLeRobot more sleek.
+  
+![image](https://github.com/user-attachments/assets/9847f2a6-f79a-4899-bd20-64a25c709660)

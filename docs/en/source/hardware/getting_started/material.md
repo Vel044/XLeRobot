@@ -3,14 +3,14 @@
 ## 💵 Total Cost 
 
 ```{note}
-Doesn't include cost of 3D printing, tools, shippings and taxes.
+Doesn't include cost of 3D printing, tools, shipping and taxes.
 ```
 
 | Price | US | EU | CN |
 | --- | --- | --- | --- |
 | **Basic** (use your laptop, single RGB head cam) | **~$660** | **~€680** | **~¥3999** |
 | ↑ Stereo dual-eye RGB head cam | +$30 | +€30 | +¥199 |
-| + RasberryPi | +$79 | +€79 | +¥399 |
+| + RaspberryPi | +$79 | +€79 | +¥399 |
 | ↑ RealSense RGBD head cam | +$220 | +€230 | +¥1499 |
 
 
@@ -51,14 +51,18 @@ Skip this section if you already have these tools:
 
 ![image](https://github.com/user-attachments/assets/ee012d47-f2a9-495c-a156-01bf92b2e63b)
 
-- XLeRobot is designed for maximum power, which is why it only comes in a 12V version.
+- XLeRobot is designed to be practical, which is why it only comes in a 12V version. You can also purchase for [STS3250 servo](https://shop.wowrobo.com/products/feetech-sts3250-c002-servo-12v-50kg-1-345-servo) (1.5x torque, 3x price) for extreme performance.
 - 17 motors = 12 for arms + 3 for base + 2 for head.
+- Any battery/power bank/power station that supports two 60W+ USB-C fast charging should work. Here are some other potential options (not tested), these brands should be available both in US and China.
+  - [UGREEN 300W 48000mAh Power Bank](https://www.ugreen.com/products/ugreen-300w-48000mah-portable-charger-power-bank?gad_source=1&gad_campaignid=22334559506&gbraid=0AAAAAokPG3uYEJ4xHLZ1A5FoS_1cCYYRO&gclid=CjwKCAjwq9rFBhAIEiwAGVAZP_WRyKyLoZsEkLylqFw3KlfsLzoJ5NMiHtnRrRCAHs69uGl3R8McnBoCL-gQAvD_BwE)
+  - [Anker Laptop Power Bank (25K, 165W)](https://www.anker.com/products/a1695-anker-power-bank-25000mah-165w?variant=44320657997974&utm_source=google&utm_medium=pmax&utm_campaign=us_anker_charger_conversion_pmax_seasonal_purchase_ost&utm_content=seasonal&utm_term=%7B20274825774%7D_%7B%7D_%7B%7D&gad_source=1&gad_campaignid=20284126303&gbraid=0AAAAADbnO27MKKh2JRMESwKW-MVxtoKEL&gclid=CjwKCAjwq9rFBhAIEiwAGVAZPyQRpShyzLVCZCrWArnCPk8fVGbShtkYDsQmfMCKwbmLKyY12u9N_xoCKC0QAvD_BwE)
+  - [AOHI 240W Laptop Power Bank 27600mAh](https://a.co/d/aW8lNc2)
 
 ## 💻 Electronics
 
 | Part | Amount | Unit Cost (US) | Buy (US) | Unit Cost (EU) | Buy (EU) | Unit Cost (CN) | Buy (CN) |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Raspberry Pi 5 (4GB) | 1 | $60.00 | [Adafruit](https://www.adafruit.com/product/5812) | €57.00 | [Mouser](https://eu.mouser.com/ProductDetail/Raspberry-Pi/SC1111?qs=HoCaDK9Nz5fnLhlMNnKTiQ%3D%3D) | ￥410 | [Taobao](https://e.tb.cn/h.64IIvlisvAL15g8?tk=fdOVexkHECW) |
+| Raspberry Pi 5 (Optional) | 1 | $60.00 | [Adafruit](https://www.adafruit.com/product/5812) | €57.00 | [Mouser](https://eu.mouser.com/ProductDetail/Raspberry-Pi/SC1111?qs=HoCaDK9Nz5fnLhlMNnKTiQ%3D%3D) | ￥410 | [Taobao](https://e.tb.cn/h.64IIvlisvAL15g8?tk=fdOVexkHECW) |
 | Motor Control Board | 2 | $10.55 | [Amazon](https://www.amazon.com/Waveshare-Integrates-Control-Circuit-Supports/dp/B0CTMM4LWK/) | €12.00 | [Amazon](https://www.amazon.fr/Waveshare-Integrates-Control-Applicable-Integrate/dp/B0CJ6TP3TP) | ￥24 | [Taobao](https://e.tb.cn/h.64DOUpLpB5crVdH?tk=BSaTex9UHWj) |
 | microSD card | 1 | $11.23 | [Amazon](https://www.amazon.com/SanDisk-Extreme-microSDXC-Memory-Adapter/dp/B09X7C7LL1/) | €10.00 | [Amazon](https://www.amazon.fr/Lexar-Carte-Micro-adaptateur-Smartphone/dp/B08XZ2KS1F) | ￥58 | [Taobao](https://e.tb.cn/h.64DMZzLz5h26s12?tk=eImPex96lCQ) |
 | USB-C to USB-A Cable 2 pcs | 1 | $8.99 | [Amazon](https://a.co/d/0mWsmhG) | €7 | [Amazon](https://www.amazon.fr/dp/B07BNF842T/) | ￥17 | [Taobao](https://e.tb.cn/h.64HOv24RLmYC4Yh?tk=AXpgexkDFd4) |
@@ -69,9 +73,9 @@ Skip this section if you already have these tools:
 
 ![image](https://github.com/user-attachments/assets/0a8afb77-30b7-4d5c-a981-9b255269f9ec)
 
-
-- Ready-made long 5264 wires are not available for purchase in the US—only **connector kits** are available that require manual assembly to extend the length (which is straightforward).
-- 2 USB-C to USB-A cables to connect the Motor Control Board to Raspberry Pi/PC
+- Raspberry Pi 5 is optional, you can just connect XLeRobot to your laptop for an easier setup.
+- Ready-made long 5264 wires are not available for purchase in the US—only **connector kits** are available that require manual assembly to extend the length (still easy).
+- 2 USB-C to USB-A cables to connect the Motor Control Board to Raspberry Pi/PC, USB-C to USB-C cables are also OK as long as your computer supports.
 - USB-C cable to connect Raspberry Pi to the battery
 - Two Type-C to DC cables (12V) connect the motor control board to the power supply.
 
@@ -85,16 +89,18 @@ Skip this section if you already have these tools:
 
 ![image](https://github.com/user-attachments/assets/0f5a10ce-d0e9-4e53-b457-27a9ba057cbf)
 
-## 🧑‍🤝‍🧑 Alternative chioces 
+## 🧑‍🤝‍🧑 Alternative choices 
 
-- **IKEA Cart**: You can use a similar cart not from IKEA; however, this may require minor adjustments to the [3D printed part](https://www.notion.so/vectorwang/3D_Models/3D_models_for_printing/XLeRobot_special/base_connector.stl).
-- **Batteries**: You can use **other batteries**, but ensure the maximum output capacity can adequately power 2 arms, 3 wheels, and a RaspberryPi (~160W).
+- **IKEA Cart**: You can use a similar cart not from IKEA; however, this may require minor adjustments to the base connector in [3D printed parts](https://github.com/Vector-Wangel/XLeRobot/tree/main/hardware).
+- **Batteries**: You can use **other batteries**, but ensure the maximum output capacity can adequately power 2 arms and 3 wheels(~120W=60W*2 ports) (and a RaspberryPi (40W) if you have one).
 - **Electronics**: You can use any brand of cables (USB-C cable must be fast-charging type), microSD card, and Raspberry Pi 5 as long as they are compatible.
 
 ## 🧩 Optional Add-ons 
 
+- 🫱Soft Gripper Design: The .3mf file contains soft finray fingers that need to be printed with TPU95A. If you want original SO101 finger, just download the original [SO101.stl](https://github.com/Vector-Wangel/XLeRobot/blob/main/hardware/Ender_Follower_SO101.stl) file.
+- ![d2e57534a9e55a3d4dc0d644242cd044](https://github.com/user-attachments/assets/8d095541-d98f-4af8-a43c-028baae0d375)
+- ✊Better grip stability: [3M gripper tape](https://www.amazon.com/gp/product/B0093CQPW8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) (got it from [UMI gripper specifications](https://docs.google.com/document/d/1TPYwV9sNVPAi0ZlAupDMkXZ4CA1hsZx7YDMSmcEy6EU/edit?tab=t.0#heading=h.5k5vwx2iqjqg)) Or any other cheaper one (such as tennis grip tape).
 - 🙌Dual-arm leader-follower joint control: Additional two [SO100 arm sets](https://github.com/TheRobotStudio/SO-ARM100/tree/main) for dual-arm leader-follower joint control
-- ✊Better grip stability: [3M gripper tape](https://www.amazon.com/gp/product/B0093CQPW8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) (got it from [UMI gripper specifications](https://docs.google.com/document/d/1TPYwV9sNVPAi0ZlAupDMkXZ4CA1hsZx7YDMSmcEy6EU/edit?tab=t.0#heading=h.5k5vwx2iqjqg))
+- 👗Sleeves: To hide the cables and give XLeRobot a better outfit, just buy the cheapest sport sleeves you can find. [I bought one randomly on Amazon.](https://a.co/d/bjD08Oi)
 - 👀VR control: Meta Quest 3 (or 3S)
-- Tactile sensors: E-flesh
-- For more add-ons and accessories, check out the [SO100 arm repository](https://github.com/TheRobotStudio/SO-ARM100/tree/main?tab=readme-ov-file#optional-hardware)
+- For more add-ons and accessories, check out the [SO101 arm repository](https://github.com/TheRobotStudio/SO-ARM100/tree/main?tab=readme-ov-file#optional-hardware)
