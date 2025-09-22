@@ -12,7 +12,8 @@ import time
 import numpy as np
 import math
 
-from lerobot.robots.xlerobot import XLerobotClient, XLerobotClientConfig, XLerobotConfig, XLerobot
+from lerobot.robots.xlerobot import XLerobotClient, XLerobotConfigClient
+from lerobot.robots.xlerobot import XLerobotConfig, XLerobot
 from lerobot.utils.robot_utils import busy_wait
 from lerobot.utils.visualization_utils import _init_rerun, log_rerun_data
 from lerobot.model.SO101Robot import SO101Kinematics
@@ -20,7 +21,7 @@ from lerobot.teleoperators.keyboard.teleop_keyboard import KeyboardTeleop, Keybo
 
 # Keymaps (semantic action: key)
 LEFT_KEYMAP = {
-    'shoulder_pan+': 'q', 'shoulder_pan-': 'e',
+    'shoulder_pan+': 'e', 'shoulder_pan-': 'q',
     'wrist_roll+': 'r', 'wrist_roll-': 'f',
     'gripper+': 't', 'gripper-': 'g',
     'x+': 'w', 'x-': 's', 'y+': 'a', 'y-': 'd',
@@ -33,7 +34,7 @@ LEFT_KEYMAP = {
     'triangle': 'y',  # Rectangle trajectory key
 }
 RIGHT_KEYMAP = {
-    'shoulder_pan+': '7', 'shoulder_pan-': '9',
+    'shoulder_pan+': '9', 'shoulder_pan-': '7',
     'wrist_roll+': '/', 'wrist_roll-': '*',
     'gripper+': '+', 'gripper-': '-',
     'x+': '8', 'x-': '2', 'y+': '4', 'y-': '6',
@@ -189,8 +190,8 @@ class SimpleTeleopArm:
         self.current_y = 0.1131
         self.pitch = 0.0
         # Set the degree step and xy step
-        self.degree_step = 3
-        self.xy_step = 0.0081
+        self.degree_step = 1
+        self.xy_step = 0.0021
         # Set target positions to zero for P control
         self.target_positions = {
             "shoulder_pan": 0.0,
@@ -381,7 +382,7 @@ class SimpleTeleopArm:
 
 def main():
     # Teleop parameters
-    FPS = 50
+    FPS = 20
     # ip = "192.168.1.123"  # This is for zmq connection
     ip = "localhost"  # This is for local/wired connection
     robot_name = "my_xlerobot_pc"
