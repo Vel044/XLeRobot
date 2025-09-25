@@ -11,8 +11,10 @@ PYTHONPATH=src python -m examples.xlerobot.teleoperate_Keyboard
 import time
 import numpy as np
 import math
+import argparse
 
-from lerobot.robots.xlerobot import XLerobotClient, XLerobotClientConfig
+# Comment the following line when used locally
+# from lerobot.robots.xlerobot import XLerobotClient, XLerobotConfigClient
 from lerobot.robots.xlerobot import XLerobotConfig, XLerobot
 from lerobot.utils.robot_utils import busy_wait
 from lerobot.utils.visualization_utils import _init_rerun, log_rerun_data
@@ -380,7 +382,7 @@ class SimpleTeleopArm:
         return action
     
 
-def main():
+def main(robot_id=None):
     # Teleop parameters
     FPS = 20
     # ip = "192.168.1.123"  # This is for zmq connection
@@ -392,7 +394,7 @@ def main():
     # robot = XLerobotClient(robot_config)    
 
     # For local/wired connection
-    robot_config = XLerobotConfig()
+    robot_config = XLerobotConfig(id=robot_id)
     robot = XLerobot(robot_config)
     
     try:
@@ -481,4 +483,9 @@ def main():
         print("Teleoperation ended.")
 
 if __name__ == "__main__":
-    main()
+    # temporary arg parse: set robot id from the command arg like -robot_id=R12251899
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--robot_id", type=str)
+    args = parser.parse_args()
+
+    main(args.robot_id)
