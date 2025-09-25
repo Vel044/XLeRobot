@@ -12,7 +12,7 @@ import time
 import numpy as np
 import math
 
-from lerobot.robots.xlerobot import XLerobotClient, XLerobotConfigClient
+from lerobot.robots.xlerobot import XLerobotClient, XLerobotClientConfig
 from lerobot.robots.xlerobot import XLerobotConfig, XLerobot
 from lerobot.utils.robot_utils import busy_wait
 from lerobot.utils.visualization_utils import _init_rerun, log_rerun_data
