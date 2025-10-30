@@ -404,7 +404,7 @@ def main():
         print(robot)
         return
         
-    _init_rerun(session_name="xlerobot_teleop_v2")
+    init_rerun(session_name="xlerobot_teleop_v2")
 
     #Init the keyboard instance
     keyboard_config = KeyboardTeleopConfig()
