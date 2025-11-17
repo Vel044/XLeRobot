@@ -116,11 +116,11 @@ def main():
     except KeyboardInterrupt:
         print("Keyboard interrupt received. Exiting...")
     finally:
-        print("Shutting down Lekiwi Host.")
+        print("Shutting down XLeRobot Host.")
         robot.disconnect()
         host.disconnect()
 
-    logging.info("Finished LeKiwi cleanly")
+    logging.info("Finished XLeRobot cleanly")
 
 
 if __name__ == "__main__":
