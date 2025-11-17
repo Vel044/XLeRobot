@@ -454,7 +454,7 @@ def main():
             print(f"Connecting to port: {port}")
         
         # Configure robot
-        robot_config = SO101FollowerConfig(port=port, id="R12253001")
+        robot_config = SO101FollowerConfig(port=port, id="R12254705")
         robot = SO101Follower(robot_config)
         
         # Configure keyboard
