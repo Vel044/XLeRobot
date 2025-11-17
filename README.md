@@ -40,8 +40,12 @@
 ---
 
 # 📰 News 
-- 2025-09-09: **Developer Assembly kit ready for purchase** [in China](https://e.tb.cn/h.SZFbBgZABZ8zRPe?tk=ba514rTBRjQ). World-wide purchase link out in 2 days.
-  - Non-profit, only for more convenient accessiblity. I personally don't earn any from this.
+- 2025-11-11: **[Temporary VLA tutorial](https://xlerobot.readthedocs.io/en/latest/software/getting_started/RL_VLA.html#vision-language-action-vla-training-for-xlerobot)** out. Official version out soon.
+- 2025-09-22: **Hardware Assembly Video Tutorial** availabe at [Youtube](https://www.youtube.com/watch?v=upB1CEFeOlk) and [Bilibili](https://www.bilibili.com/video/BV1AGWFzUEJf/). Thanks WOWROBO for making this video!
+- 2025-09-09: **Developer Assembly kit (excluding battery and IKEA cart) ready for purchase** in [China (Taobao) for **3699￥**](https://e.tb.cn/h.SZFbBgZABZ8zRPe?tk=ba514rTBRjQ) and [world-wide for **579\$**](https://shop.wowrobo.com/products/xlerobot-dual-arm-mobile-household-robot-kit?variant=47297659961561). _(In collaboration with **Wowrobo**, one of the official collaborators with Huggingface SO101 arm, they have sold 5k+ SO101 arm worldwide with great customer feedback.)_
+  <img width="1482" height="485" alt="image" src="https://github.com/user-attachments/assets/788836c1-966a-4d11-a911-5c37befc0b85" />
+  - Non-profit, I personally don't earn any from this. I also asked Wowrobo to set the price as low as possible.
+  - This is only the assembly kit for developers, please check documentation website and this repo for available codes and tutorials before you purchase.
 - 2025-09-09: Joined [Embodied AI Home Robot Hackathon](https://www.seeedstudio.com/embodied-ai-worldwide-hackathon-home-robot.html) (Oct 25–26, Bay Area) held by **SEEED x Nvidia x Huggingface** as mentor! [Register HERE](https://docs.google.com/forms/d/e/1FAIpQLSdYYDegdgIypxuGJNLcoc8kbdmU4jKgl49zg4X-107LAmBN4g/viewform).
 - <img width="2400" height="1256" alt="image" src="https://github.com/user-attachments/assets/4132c23b-5c86-4bb9-94b4-a6b12059685b" />
 
@@ -67,12 +71,12 @@
 > [!NOTE] 
 > Cost excludes 3D printing, tools, shipping, and taxes.
 
-| Price (Buy all the parts yourself) | US | EU | CN |
-| --- | --- | --- | --- |
-| **Basic** (use your laptop, single RGB head cam) | **~$660** | **~€680** | **~¥3999** |
-| ↑ Stereo dual-eye RGB head cam | +$30 | +€30 | +¥199 |
-| + RasberryPi | +$79 | +€79 | +¥399 |
-| ↑ RealSense RGBD head cam | +$220 | +€230 | +¥1499 |
+| Price (Buy all the parts yourself) | US | EU | CN | IN |
+| --- | --- | --- | --- | --- |
+| **Basic** (use your laptop, single RGB head cam) | **~$660** | **~€680** | **~¥3999** | **~₹87000** |
+| ↑ Stereo dual-eye RGB head cam | +$30 | +€30 | +¥199 | +₹6550 |
+| + RasberryPi | +$79 | +€79 | +¥399 | +₹7999 |
+| ↑ RealSense RGBD head cam | +$220 | +€230 | +¥1499 | +₹35726 |
 
 
 ---
@@ -98,6 +102,9 @@ Please refer to [CONTRIBUTING.md](CONTRIBUTING.md) for guidance on how to get in
 
 - [Gaotian/Vector Wang](https://vector-wangel.github.io/)
 - [Zhuoyi Lu](https://lzhuoyi.github.io/Zhuoyi_Lu.github.io/): RL sim2real deploy, teleop on real robot (Xbox, VR, Joycon)
+- Yiyang Huang: RL & VLA implementation (ongoing)
+- YCP: WebUI for remote control (ongoing)
+- [Lixing Zhang](lixingzhang.com): Hardware design improvements
 - Nicole Yue: Documentation website setup
 - Yuesong Wang: Mujoco simulation
 
